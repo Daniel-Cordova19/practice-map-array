@@ -1,20 +1,23 @@
 function doubleNumbers(arr) {
-  // your code here
+  return arr.map((x) => x * 2);
 }
 
-console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
+console.log( 'Primer ejercicio ' + doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
 function stringItUp(arr) {
-  // your code here
+  return arr.map ((x) => x.toString())
 }
 
-console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
+
+console.log( 'Segundo ejercicio ' + stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
 function capitalizeNames(arr) {
-  // your code here
+  return arr.map ((x) => x.charAt(0).toUpperCase()) .slice(1);
+
+  // toUpperCase() .charAt
 }
 
-console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
+console.log( 'Tercer Ejercicio ' + capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 function namesOnly(arr) {
   // your code here
@@ -47,7 +50,10 @@ console.log(
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
 function makeStrings(arr) {
-  // your code here
+    //   return arr.map((x) => x * 2);
+
+  // De cada objeto, me quedo solo con la propiedad 'name'
+  return arr.map((x) => x.name);
 }
 
 console.log(
